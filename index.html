@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>troca de image</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+
+
+</head>
+<body>
+    <img class="img" src="" alt="" srcset="">
+    <button class="btn">Trocar</button>
+</body>
+  
+   <script>
+    var img = document.querySelector(".img")
+   var btn= document.querySelector(".btn")
+   var cont=1
+
+   btn.addEventListener("click", () =>{
+    if (cont==217) {
+        cont=1
+    } else {
+        cont++
+
+
+
+        
+        img.src=cont+".jpg"
+    }
+    
+   })
+
+
+
+   </script>
+
+
+</html>
